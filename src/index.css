@@ -11,3 +11,185 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Blog */
+#blog a{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+/* Home */
+#menuHeader nav a{
+  
+  color: black;
+  
+}
+
+.Abs{
+  position: relative;
+  margin-top: 20px;
+
+}
+
+.get{
+  position: absolute;
+  transform: translate(35%, 110%);
+}
+.get h1{
+  font-size: 65px;
+}
+.get Button{
+  font-size: 20px;
+  background-color: black;
+}
+
+.shop h1{
+  align-items: center;
+  
+}
+
+.btn{
+  align-items: center;
+  display: flex;
+  background-color: black;
+}
+.btn Button{
+  background-color: black;
+}
+.cone{
+  position: relative;
+}
+
+.done{
+  position:absolute;
+  top: 45%;
+  left: 20rem;
+  
+  text-align: center;
+  
+}
+
+.done Button{
+  padding: 20px;
+  background-color: black;
+}
+
+.feature{
+  padding-top: 60px;
+}
+
+.feature-item{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.fluid-1{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.fluid-1 img{
+  padding-top: 20px;
+}
+
+.fluid-2{
+  padding-bottom: 30px;
+}
+
+.fluid-3{
+  padding-bottom: 50px;
+}
+/* Footer */
+.jus p{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.jus h3{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.padd{
+  justify-content: center;
+  display:grid;
+}
+
+.end {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.sand div {
+  padding: 25px;
+  padding-bottom: 15px;
+}
+.sand {
+  display: flex;
+  justify-content: left;
+}
+
+.fluid{
+  padding-top: 80px;
+}
+
+.fluid-row{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fluid-color{
+  background-color: #f5f5f5;
+}
+#footer a{
+  color: black;
+}
+
+@media (min-width: 372px) and (max-width: 950px) {
+     .end{
+       justify-content: center;
+       display: flex;
+       align-items: center;
+     }
+     .get{
+       font-size: 20px;
+       transform: unset;
+     }
+     .Abs{
+       padding-bottom: 20px;
+     }
+     .menuHeader{
+       justify-content: center;
+       display: flex;
+       align-items: center;
+     }
+} 
+
+/* Form */
+
+.form{
+  padding-left: 450px;
+  padding-right: 350px;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  font-size: 100px;
+}
+.txt{
+    height: 4rem !important;
+
+    
+  
+}
+.taxt{
+  width: 60px;
+}
+
+
+/*cart */
+
+.fluid0{
+  display: flex;
+  justify-content: left;
+}

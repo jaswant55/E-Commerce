@@ -6,12 +6,29 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+     <App />
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+
+// console.log("Product s props",props.products)
+// return(
+//   <>
+//       {props.products.map((product) => {
+//         //[ {images:[]}]
+//   return (
+//       <Container>
+//         <Card>
+//           <CardGroup>
+//         {
+//           product.images.map((data)=>(
+//             <img src={data.src}/>
+//           ))
+//         }
