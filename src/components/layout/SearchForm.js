@@ -3,18 +3,20 @@ import {Form,
 Input,
 InputGroup,
 InputGroupAddon,
-FormGroup,Button, Collapse} from 'reactstrap';
+FormGroup,Button, Collapse, NavItem} from 'reactstrap';
 import {FaSistrix} from 'react-icons/fa'
 import axios from 'axios';
 import Myproducts from './Myproducts';
+import { toast } from 'react-toastify';
 import { Container } from 'react-bootstrap';
+
 
 const SearchForm = (props) => {
   const [query, setQuery] = useState("");
   
 
   const [products, setProducts] = useState([]);
-
+  
   
   async function fetchProducts(){
        axios.get('http://localhost/woocom/wp-json/public-woo/v1/products?search=' + query)
@@ -28,6 +30,7 @@ const SearchForm = (props) => {
   
       
       
+
   
 
     }
@@ -37,10 +40,12 @@ const SearchForm = (props) => {
 
     fetchProducts();
 };
+   
   let res = null;
   if(products.length > 0 ) {
    
       res = <Myproducts  products={products}/>;
+      
   } 
   return (
     
@@ -74,6 +79,7 @@ const SearchForm = (props) => {
                </FormGroup>
            </Form>
            {res}
+           
            </Collapse>
     </div>
   )

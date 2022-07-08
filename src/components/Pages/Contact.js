@@ -1,16 +1,21 @@
-import React from 'react'
+import React from 'react';
+import {Container, Col, Row} from 'reactstrap';
 
 const Contact = () => {
   return (
-    <div>
-      <div>
-        <h1>Hello my self shaving</h1>
-        <p>
-          the name of the first latter is very similar to the code you compiled
-        </p>
-      </div>
-    </div>
+    <>
+      <Container>
+        <Row>
+          <Col>
+              <div>
+                <h1>Leave Us a Message</h1>
+
+              </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
   )
 }
 
-export default Contact
+export default Contact;

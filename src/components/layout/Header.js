@@ -13,7 +13,8 @@ import { Navbar,
         Input,
         Form,
         InputGroupAddon,
-        Button
+        Button,
+        
         
      } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -22,24 +23,38 @@ import { FaSistrix,FaUserAlt, FaShoppingCart} from "react-icons/fa";
 import { Icons } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
-import { Popover, OverlayTrigger } from 'react-bootstrap';
+import { Popover, OverlayTrigger, Dropdown, Badge } from 'react-bootstrap';
 import ShoppingCart from './ShoppingCart'
+import { toast } from 'react-toastify';
+import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
+import DropdownToggle from 'react-bootstrap/esm/DropdownToggle';
+import Cart from '../cart/Cart';
 
+
+import { Card,CardImg, CardBody,CardTitle,CardText} from 'reactstrap';
+import { useSelector } from 'react-redux';
 
 const Header = (props) => {
+
+   const getdata= useSelector((state)=>state.cartreducer.carts);
+   console.log(getdata);
      let Navigate = useNavigate();
      const change=()=>{
          return Navigate('/userAccount')
      }
-
+     
+     const cartChange= ()=>{
+       return Navigate('/Cart')
+     }
+console.log("Header PRops",props)
+     
     // let navigate = useNavigate(); 
     // const routeChange = () =>{ 
     //   let path = `/userAccount`; 
     //   navigate(path);
     // }
    return(
-
-    <Container id='menuHeader' fluid >
+     <>    <Container id='menuHeader' fluid >
     
     <Row className='Row'>
     
@@ -87,12 +102,23 @@ const Header = (props) => {
            
     
     </Col>
-    <Col><FaUserAlt onClick={change}/></Col>  
+    <Col><FaUserAlt onClick={change} /></Col>  
     <Col> 
-          
-    <FaShoppingCart>
-         <Cart/>
-    </FaShoppingCart></Col>
+      <Nav>
+        <Dropdown>
+          <DropdownToggle>
+              <FaShoppingCart />
+              <Badge>{getdata.length}</Badge>
+          </DropdownToggle>
+          <DropdownMenu style={{ minWidth: 370}}>
+             {/* {
+              getdata.length ?
+              
+             } */}
+          </DropdownMenu>
+        </Dropdown>
+      </Nav>    
+    </Col>
     </Row>
     </Container>
   </Navbar>  
@@ -100,6 +126,7 @@ const Header = (props) => {
     </Row>
     {/* </Collapse> */}
   </Container>
+  </>
 
    
    )

@@ -1,16 +1,20 @@
 import React from 'react'
 import {Container, Card, CardBody,Row, Col, Button, CardImg, CardTitle, CardText} from 'reactstrap'
 import Image from "react-bootstrap/Image";
+
 import '../../index.css';
+
 
 const Home = () => {
   return (
     <>
+          
+
         <Container fluid className='fluid-2' >
     <div className="Abs">
     <div className='get'>
        <h1>Headline that grabs</h1>
-       <h1>people’s attention</h1>
+       <h1>people's attention</h1>
        <br/>
       <Button>Shop Now</Button>
     </div>
@@ -30,7 +34,7 @@ const Home = () => {
               <br/>
             <div className="col-12 justify-content-center d-flex">            
                 <p>
-                A powerful headline about your product’s features
+                A powerful headline about your product's features
                  to give focus to your chosen product collection
                 </p>
             </div>
@@ -158,6 +162,7 @@ const Home = () => {
               </div>
 
         </Container>
+        
           </>
 
 

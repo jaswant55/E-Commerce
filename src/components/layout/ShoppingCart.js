@@ -1,28 +1,57 @@
-import React from 'react'
-import { Popover, OverlayTrigger } from 'react-bootstrap';
+// import React,{useState}from 'react'
+// import { Popover, OverlayTrigger } from 'react-bootstrap';
+// import { Button, CardBody, CardImg, Container } from 'reactstrap';
+// import { toast } from 'react-toastify';
+// import Myproducts from './Myproducts';
 
-const ShoppingCart = () => {
-  return (
-    <div>
-        {['bottom'].map((placement) => (
-    <OverlayTrigger
-      trigger="hover"
-      key={placement}
-      placement={placement}
-      overlay={
-        <Popover id={`popover-positioned`}>
-          <Popover.Header as="h3">{`Popover`}</Popover.Header>
-          <Popover.Body>
-            <strong>Holy guacamole!</strong> Check this info.
-          </Popover.Body>
-        </Popover>
-      }
-    >
-      <Button variant="secondary">Popover on hey</Button>
-    </OverlayTrigger>
-  ))}
-    </div>
-  )
-}
 
-export default ShoppingCart;
+  
+     
+// const ShoppingCart = (props) => {
+
+//   return (
+//     <>
+//       {props.products.map((product) => {
+//     return (
+//         <Container>
+          
+//           <Row>
+//             <Col md={4}>
+                     
+//               <Card style={{ width: '20rem' }}className='border-0' >
+//               {product.images.map((data) => {
+//               return(
+//               <CardImg height='425px' className='fluid0' src={data.src}/>
+//                 )
+//                 } )}
+                
+                 
+//                   <CardBody>
+//                    <CardTitle>{product.name}</CardTitle>
+//                     <CardText>
+//                         {product.price}$   
+
+
+//                     </CardText>
+                    
+//                     <Button variant="dark" >ADD to Cart</Button>
+//                   </CardBody>
+//               </Card>
+//             </Col>
+//             <Col md={4}>
+                  
+
+
+                  
+
+//             </Col>
+//           </Row>
+            
+//         </Container>
+//     );
+// })}
+//     </>
+//   )
+// }
+
+// export default ShoppingCart

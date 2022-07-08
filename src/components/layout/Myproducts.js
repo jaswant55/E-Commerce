@@ -29,7 +29,7 @@ const Myproducts = (props) => {
 
                     </CardText>
                     
-                    <Button variant="dark">ADD to Cart</Button>
+                    <Button variant="dark" >ADD to Cart</Button>
                   </CardBody>
               </Card>
             </Col>
@@ -46,7 +46,7 @@ const Myproducts = (props) => {
     );
 })}
 </>
-);
+)
 }
 
 export default Myproducts;
